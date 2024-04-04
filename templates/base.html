@@ -1,0 +1,13 @@
+{% import "_macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+  {{ macros.head() }}
+  <body>
+    {{ macros.sidebar() }}
+    <div class="mt-5">
+      {% block content %}
+      <h1>this is the default content in base.html</h1>
+      {% endblock %}
+    </div>
+  </body>
+</html>
