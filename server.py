@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from .db import sample_db
 
 app = Flask(__name__)
 
@@ -8,13 +9,14 @@ def home():
 
 @app.route("/users")
 def users():
-    return render_template('users/index.html')
+    users = sample_db.get_users()
+    return render_template('users/index.html', users=users)
 
 @app.route("/cashier")
-def cashier():
+def cashier(): 
     return render_template('cashier/index.html')
 
-# @app.route("/logout")
+# @app.route("/logout") 
 # def logout():
 #     return render_template('logout/index.html')
 
