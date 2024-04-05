@@ -646,6 +646,22 @@ video {
   width: 100%;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
