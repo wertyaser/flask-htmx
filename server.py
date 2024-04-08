@@ -12,9 +12,17 @@ def users():
     users = sample_db.get_users()
     return render_template('users/index.html', users=users)
 
+@app.route("/users/edit/<string:user_id>")
+def edit_user(user_id): 
+    user = sample_db.get_user(user_id)
+    print(user)
+    return render_template('users/_partials/edit.html', user = user)
+
 @app.route("/cashier")
 def cashier(): 
     return render_template('cashier/index.html')
+
+
 
 # @app.route("/logout") 
 # def logout():
