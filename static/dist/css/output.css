@@ -588,6 +588,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -616,18 +624,6 @@ video {
   height: 2rem;
 }
 
-.max-h-4 {
-  max-height: 1rem;
-}
-
-.max-h-12 {
-  max-height: 3rem;
-}
-
-.max-h-14 {
-  max-height: 3.5rem;
-}
-
 .max-h-24 {
   max-height: 6rem;
 }
@@ -644,28 +640,16 @@ video {
   width: 100%;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -718,11 +702,6 @@ video {
   border-width: 1px;
 }
 
-.border-blue-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
-}
-
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -736,16 +715,6 @@ video {
 .border-green-500 {
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-blue-700 {
@@ -763,22 +732,18 @@ video {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-2 {
-  padding: 0.5rem;
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -787,6 +752,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-3 {
@@ -801,10 +770,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .font-mono {
