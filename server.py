@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from .db import sample_db
 
 app = Flask(__name__)
@@ -12,10 +12,11 @@ def users():
     users = sample_db.get_users()
     return render_template('users/index.html', users=users)
 
-@app.route("/users/edit/<string:user_id>")
-def edit_user(user_id): 
+@app.route("/users/edit/<string:user_id>", methods=['GET', 'PUT'])
+def edit_user(user_id):
+
+    #default get req
     user = sample_db.get_user(user_id)
-    print(user)
     return render_template('users/_partials/edit.html', user = user)
 
 @app.route("/cashier")

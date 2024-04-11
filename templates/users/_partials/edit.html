@@ -1,16 +1,30 @@
 {% import "_macros.html" as macros %} {{ macros.head() }}
-<section class="">
-  <h1>Edit User</h1>
-  <div class="flex flex-col" hx-target="this">
-    <input class="border font-bold" type="text" value="{{ user.name }}" />
-    <input class="mt-1 border" type="text" value="{{ user.type }}" />
+<section class="p-5">
+  <!-- <h1 class="text-center text-2xl font-semibold">Edit User</h1> -->
+  <div class="flex flex-col text-xl" hx-target="this">
+    <input
+      class="border font-bold w-auto"
+      type="text"
+      value="{{ user.name }}"
+    />
+    <input class="mt-1 border w-auto" type="text" value="{{ user.type }}" />
   </div>
-  <div class="mt-3">
+  <div class="mt-3 flex">
     <button
-      class="p-2 border border-green-500 rounded-md max-w-sm shadow bg-green-300"
-      hx-get="{{url_for('edit_user', user_id=user.id)}}"
+      hx-put="{{url_for('edit_user', user_id=user_id)}}"
+      class="p-2 border border-blue-500 rounded-md max-w-sm shadow bg-blue-300"
     >
-      Edit User
+      Submit
+    </button>
+    <button
+      class="ml-1 p-2 border border-red-500 rounded-md max-w-sm shadow bg-red-300"
+    >
+      Cancel
+    </button>
+    <button
+      class="ms-auto p-2 border border-yellow-500 rounded-md max-w-sm shadow bg-yellow-300"
+    >
+      Delete User
     </button>
   </div>
 </section>
