@@ -12,9 +12,19 @@ def users():
     users = sample_db.get_users()
     return render_template('users/index.html', users=users)
 
+@app.route("/user/<string:user_id>")
+def show(user_id):
+    user = sample_db.get_user(user_id)
+    return render_template('users/_partials/show.html', user=user)
+
 @app.route("/users/edit/<string:user_id>", methods=['GET', 'PUT'])
 def edit_user(user_id):
-
+    if request.method == 'PUT':
+        name = request.form.get('name')
+        type = request.form.get('type')
+        sample_db.update_user(user_id, name=name, type=type)
+        return show(user_id)
+    
     #default get req
     user = sample_db.get_user(user_id)
     return render_template('users/_partials/edit.html', user = user)

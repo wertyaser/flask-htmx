@@ -26,56 +26,6 @@ db = {
       "id": "5",
       "name": "John Doe",
       "type": "Transaction 1"
-    },
-    {
-      "id": "6",
-      "name": "Jane Smith",
-      "type": "Transaction 2"
-    },
-    {
-      "id": "7",
-      "name": "Michael Johnson",
-      "type": "Transaction 3"
-    },
-    {
-      "id": "8",
-      "name": "Emily Brown",
-      "type": "Transaction 4"
-    },
-    {
-      "id": "9",
-      "name": "David Martinez",
-      "type": "Transaction 1"
-    },
-    {
-      "id": "10",
-      "name": "Sarah Williams",
-      "type": "Transaction 2"
-    },
-    {
-      "id": "11",
-      "name": "Alex Lee",
-      "type": "Transaction 3"
-    },
-    {
-      "id": "12",
-      "name": "Olivia Nguyen",
-      "type": "Transaction 4"
-    },
-    {
-      "id": "13",
-      "name": "Daniel Brown",
-      "type": "Transaction 1"
-    },
-    {
-      "id": "14",
-      "name": "Sophia Garcia",
-      "type": "Transaction 2"
-    },
-    {
-      "id": "15",
-      "name": "James Wilson",
-      "type": "Transaction 3"
     }
   ]
 }
