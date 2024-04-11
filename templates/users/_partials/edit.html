@@ -3,11 +3,15 @@
   <!-- <h1 class="text-center text-2xl font-semibold">Edit User</h1> -->
   <div class="flex flex-col text-xl" hx-target="this">
     <input
-      class="border font-bold w-auto"
+      class="border font-bold rounded-sm p-2"
       type="text"
       value="{{ user.name }}"
     />
-    <input class="mt-1 border w-auto" type="text" value="{{ user.type }}" />
+    <input
+      class="mt-1 border rounded-sm p-2"
+      type="text"
+      value="{{ user.type }}"
+    />
   </div>
   <div class="mt-3 flex">
     <button

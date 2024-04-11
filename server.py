@@ -23,6 +23,10 @@ def edit_user(user_id):
 def cashier(): 
     return render_template('cashier/index.html')
 
+@app.route("/monitoring")
+def monitoring(): 
+    return render_template('monitoring/index.html')
+
 
 
 # @app.route("/logout") 
