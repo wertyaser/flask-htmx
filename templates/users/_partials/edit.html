@@ -1,6 +1,6 @@
 {% import "_macros.html" as macros %} {{ macros.head() }}
-<section class="">
-  <h1>Edit User</h1>
+<section class="max-w-screen-xl mx-auto">
+  <h1 class="font-semibold text-2xl text-center">Edit User</h1>
   <div class="flex flex-col" hx-target="this">
     <input class="border font-bold" type="text" value="{{ user.name }}" />
     <input class="mt-1 border" type="text" value="{{ user.type }}" />
