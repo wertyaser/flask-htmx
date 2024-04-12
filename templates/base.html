@@ -3,7 +3,7 @@
 <html lang="en">
   {{ macros.head() }}
   <body>
-    {{ macros.sidebar() }}
+    {{ macros.sidebar(request.endpoint) }}
     <div class="mt-5">
       {% block content %}
       <h1>this is the default content in base.html</h1>
